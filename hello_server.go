@@ -16,5 +16,7 @@ func main() {
 
 // リクエストを処理する関数
 func handler(writer http.ResponseWriter, Request *http.Request) {
+	// FPrintはPrint（標準出力）接頭辞としてFがついている
+	// 書き込み先を明示的に指定できる
 	fmt.Fprint(writer, "Hello World from Go.")
 }
