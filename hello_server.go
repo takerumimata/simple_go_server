@@ -15,6 +15,6 @@ func main() {
 }
 
 // リクエストを処理する関数
-func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "Hello World from Go.")
+func handler(writer http.ResponseWriter, Request *http.Request) {
+	fmt.Fprint(writer, "Hello World from Go.")
 }
