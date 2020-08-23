@@ -11,6 +11,8 @@ func main() {
 	http.HandleFunc("/a", handler)
 
 	// 8080ポートで起動
+	// 第一引数が""の場合はデフォルトの80番が利用される
+	// 第二引数がnilの場合は、デフォルトのマルチプレクサであるDefaultServeMuxが使われる
 	http.ListenAndServe(":8080", nil)
 }
 
